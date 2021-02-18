@@ -16,7 +16,7 @@ Practice app made with vanilla JavaScript, Boostrap, HTML, does not require inst
 
 #### Demo
 
-See [camperConsumer]()
+See []()
 
 
 
