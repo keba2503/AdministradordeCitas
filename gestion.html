@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Registro</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i"
+    rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/one-page-wonder.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="/index.html">Aministracion de citas</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="masthead text-center text-white">
+    <div class="masthead-content">
+
+
+
+      <!-- Formulario de registro -->
+
+      <div class="container mt-5">
+        <div id="contenido" class="row">
+          <div class="col-md-6 agregar-cita">
+            <form id="nueva-cita">
+              <h2 id="administra" class="mb-4">Datos del paciente</h2>
+              <div class="form-group row">
+                <label class="col-sm-4 col-lg-4 col-form-label">Paciente:</label>
+                <div class="col-sm-8 col-lg-8">
+                  <input type="text" id="paciente" name="paciente" class="form-control"
+                    placeholder="Nombre y Apellido de Paciente">
+                </div>
+              </div>
+
+              <div class="form-group row">
+                <label class="col-sm-4 col-lg-4 col-form-label">Teléfono:</label>
+                <div class="col-sm-8 col-lg-8">
+                  <input type="tel" id="telefono" name="telefono" class="form-control" placeholder="Número de Teléfono">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-sm-4 col-lg-4 col-form-label">Fecha:</label>
+                <div class="col-sm-8 col-lg-8">
+                  <input type="date" id="fecha" name="fecha" class="form-control">
+                </div>
+              </div>
+
+              <div class="form-group row">
+                <label class="col-sm-4 col-lg-4 col-form-label">Hora:</label>
+                <div class="col-sm-8 col-lg-8">
+                  <input type="time" id="hora" name="hora" class="form-control">
+                </div>
+              </div>
+
+              <div class="form-group row">
+                <label class="col-sm-4 col-lg-4 col-form-label">Motivo:</label>
+                <div class="col-sm-8 col-lg-8">
+                  <textarea id="motivo" name="motivo" class="form-control"></textarea>
+                </div>
+              </div>
+              <div class="form-group">
+                <button type="submit" class="btn btn-success w-100 d-block">Crear Cita</button>
+              </div>
+            </form>
+          </div>
+          <div class="col-md-6">
+            
+            <div class="contenedor">
+            
+              <h2 id="administra" class="mb-4">Administra tus Citas</h2>
+              <ul id="citas" class=" lista-citas"></ul></div>
+            
+          </div>
+        </div>
+        <!--.row-->
+      </div>
+      <!--.container-->
+
+
+    </div>
+
+    <div class="bg-circle-1 bg-circle"></div>
+    <div class="bg-circle-2 bg-circle"></div>
+    <div class="bg-circle-3 bg-circle"></div>
+    <div class="bg-circle-4 bg-circle"></div>
+  </header>
+
+
+  <!-- Footer -->
+  <footer class="py-5 bg-black">
+    <div class="container">
+      <p class="m-0 text-center text-white small">Copyright &copy; Karen Borrero Website 2020</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+
+  <script src="js/app.js" type="module"></script>
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
