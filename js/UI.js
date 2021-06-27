@@ -32,23 +32,25 @@ export class UI {
         }, 3000);
     }
 
-    imprimirCitas() { // Se puede aplicar destructuring desde la función...
+    imprimirCitas(citas) { // Se puede aplicar destructuring desde la función...
 
         this.limpiarHTML();
 
-        this.textoHeading(citas);
+       
 
         //Leer el contenido de la base de datos
 
         const objectStore = DB.transaction('citas').objectStore('citas');
 
         const fnTextoHeading = this.textoHeading;
+      
 
         const total = objectStore.count();
 
-        total.onsuccess = function () {
+        total.onsuccess = function (citas) {
             fnTextoHeading(total.result);
-
+        
+           
         }
 
         objectStore.openCursor().onsuccess = function (e) {
@@ -110,7 +112,8 @@ export class UI {
     }
 
     textoHeading(citas) {
-        if (citas.length > 0) {
+     
+        if (citas > 0) {
             heading.textContent = 'Administra tus Citas '
         } else {
             heading.textContent = 'No hay Citas, comienza creando una'
